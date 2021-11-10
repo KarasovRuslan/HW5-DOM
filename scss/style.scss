@@ -1,0 +1,89 @@
+@import url(_fonts.scss);
+
+* {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(74, 202, 0);
+}
+
+.container {
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    margin-bottom: 20px;
+}
+
+.user {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 50px 70px 50px;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px 3px grey;
+
+
+    & .data {
+        background-color: rgb(226, 226, 226);
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 10px;
+        padding: 12px 5px;
+        border-radius: 5px;
+        border: 0;
+        outline: none;
+
+        &:focus {
+            box-shadow: 0px 0px 0px 2px green;
+        }
+
+        &::placeholder {
+            color: grey;
+            opacity: 50%;
+        }
+    }
+
+    & .button {
+        background-color: rgb(5, 211, 5);
+        color: rgb(255, 255, 255);
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        padding: 12px 5px;
+        border-radius: 5px;
+        border: 0;
+        outline: none;
+
+        &:focus {
+            box-shadow: 0px 0px 0px 2px orange;
+        }
+    }
+
+    & .text {
+        line-height: 16px;
+        font-size: 12px;
+        color: grey;
+        opacity: 50%;
+        text-align: center;
+    }
+
+    & .link {
+        text-decoration: none;
+        color: rgb(13, 156, 13);
+    }
+
+}
+
+.output {
+    font-family: 'Titillium Web', sans-serif;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
